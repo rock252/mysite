@@ -1,0 +1,169 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="John Doe">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>HostAd</title>
+    <!-- Place vicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="/static/images/hostad2.png">
+    <link rel="shortcut icon" type="image/ico" href="/static/images/hostad2.png" />
+    <!-- Plugin-CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/css/themify-icons.css">
+    <link rel="stylesheet" href="/static/css/magnific-popup.css">
+    <link rel="stylesheet" href="/static/css/animate.css">
+    <!-- Main-Stylesheets -->
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+    <script src="/static/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#primary-menu">
+
+   <!-- <div class="preloader">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>   Mainmenu-area-->
+    <div class="mainmenu-area" data-spy="affix" data-offset-top="100">
+        <div class="container">
+            <!--Logo-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="{% url 'home' %}" class="navbar-brand logo">
+                     <img src="/static/images/hostad2.png" alt="" style="height: 50px">
+                </a>
+            </div>
+            <!--Logo/-->
+            <nav class="collapse navbar-collapse" id="primary-menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'features' %}">Product</a></li>
+                    <li><a href="{% url 'service' %}">Features</a></li>
+                   <!-- <li><a href="{% url 'pricing' %}">Pricing</a></li> -->
+                    <li><a href="{% url 'team' %}">Team</a></li>
+                    <!--<li><a href="{% url 'faq' %}">FAQ</a></li>-->
+                    <li><a href="{% url 'blog' %}">Blog</a></li> 
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                    <li class="active"><a href="#con">Customer portal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--Mainmenu-area/-->
+
+
+
+    <!--Header-area-->
+   
+    <!--Header-area/-->
+
+
+
+
+     
+     <footer class="footer-area relative sky-bg" id="con">
+        <div class="absolute footer-bg"></div>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                        <div class="page-title">
+                            <h2>Customer Portal</h2>
+                            <p>"The goal is to turn data into information, and information into insight."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+
+
+                        <form action="."  method="post" >
+                             {% csrf_token %}
+
+                            <input type="text" id="form-subject" name="username" class="form-control" placeholder="Username">
+                            <input type="password" id="form-subject" name="password" class="form-control" placeholder="Password">
+
+                            
+                            <div align="center"><button type="sibmit" class="button" >Submit</button></div>
+                            
+
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 pull-right">
+                        <ul class="social-menu text-right x-left">
+                            <li><a href="https://www.facebook.com/udnkhatola/"><i class="ti-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/udnkhatola"><i class="ti-twitter"></i></a></li>
+                            <li><a href="https://plus.google.com/112556908096050293356"><i class="ti-google"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/11198995/"><i class="ti-linkedin"></i></a></li>
+                           <!-- <li><a href="#"><i class="ti-github"></i></a></li> -->
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <p>"The business that considers itself immune to the necessity for advertising sooner or later finds itself immune to business"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <p>&copy;Copyright 2018 All right reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!--Vendor-JS-->
+    <script src="/static/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="/static/js/vendor/bootstrap.min.js"></script>
+    <!--Plugin-JS-->
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <script src="/static/js/contact-form.js"></script>
+    <script src="/static/js/jquery.parallax-1.1.3.js"></script>
+    <script src="/static/js/scrollUp.min.js"></script>
+    <script src="/static/js/magnific-popup.min.js"></script>
+    <script src="/static/js/wow.min.js"></script>
+    <!--Main-active-JS-->
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
+
+
+

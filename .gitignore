@@ -1,0 +1,38 @@
+*.pyc
+__pycache__
+myvenv
+db.sqlite3
+/static
+.DS_Store
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+*.manifest
+*.spec
+# Django stuff:
+*.log
+# Sphinx documentation
+docs/_build/
+# PyBuilder
+target/
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
