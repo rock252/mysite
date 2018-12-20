@@ -25,7 +25,7 @@ SECRET_KEY = '+=5@!@@1nx3ncz*1dt)1nc-)lgt9rlgd=v@+gu(3-%s&cy$4re'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'hostad.us-east-1.elasticbeanstalk.com', 'udnkhatola.com', 'www.udnkhatola.com', 'www.hostad.in','hostad.in']
+ALLOWED_HOSTS = ['127.0.0.1', 'shivam-dev.us-east-1.elasticbeanstalk.com', 'udnkhatola.com', 'www.udnkhatola.com', 'www.hostad.in','hostad.in']
 
 
 # Application definition
